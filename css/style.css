@@ -1,0 +1,1030 @@
+/* Font chữ cho website */
+
+@font-face {
+    font-family: SVN-Gilroy;
+    src: url("../font-svn-gilroy/svn-gilroy-regular.otf")
+}
+
+@font-face {
+    font-family: SVN-Gilroy;
+    src: url("../font-svn-gilroy/svn-gilroy-bold.otf");
+    font-weight: bold;
+}
+
+* {
+    font-family: SVN-Gilroy, Helvetica, sans-serif;
+}
+
+.section-align {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* CSS cho các thẻ a */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}
+
+.grey {
+    color: #828282;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+}
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* CSS CHO INDEX.HTML                       */
+
+.header-index {
+    background: url(../img/cover-home) center;
+    background-position: center;
+    background-size: cover;
+}
+
+.index-cover-and-nav{
+    position: relative;
+}
+
+.logo-and-navigation {
+    position: absolute;
+    left: 0%;
+    right: -5%;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-and-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li ul li {
+    background: white;
+    padding: 15px;
+}
+
+.main-menu {
+    display: flex;
+    position: relative;
+    right: 0%;
+}
+
+.main-menu>li>a {
+    display: inline-block;
+    padding: 40px 15px 15px;
+}
+
+
+/* làm cho những li trong main-menu nếu sau này có menu con thì menu con sẽ phụ thuộc vào vị trí của nó */
+
+.main-menu li {
+    position: relative;
+}
+
+
+/* làm cho những menu con có vị trí phụ thuộc vào li chứ nó */
+
+li ul {
+    position: absolute;
+    display: none;
+}
+
+.main-menu li:hover>ul {
+    display: block;
+}
+
+
+/* Chỉnh vị trí của menu con 2 nằm bên phải của nó */
+
+.submenu2 {
+    left: 100%;
+    top: 0;
+}
+
+.banner-title {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    /* số dương, số âm */
+    margin: 350px 110px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 25.2px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.shop-now {
+    color: black;
+    text-align: right;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 50px;
+    right:100px ;
+    z-index: 1;
+}
+
+.shop-now .black-btn {
+    color: black;
+    font-size: 16px;
+     background-color: transparent;
+}
+
+.black-btn {
+    background-color: black;
+    color: white;
+}
+
+.black-btn:hover {
+    background-color: navy;
+    color: white;
+}
+
+.register-btn {
+    margin: 20px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    width: 160px;
+}
+
+.login-register {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+form input {
+    border-width: 0 0 1px;
+    background-color: transparent;
+    width: 40%;
+}
+
+
+/* THANH NAVIGATION */
+
+.thanh-navigation a {
+    padding: 40px 15px;
+}
+
+.thanh-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-path {
+    display: none;
+    list-style-type: none;
+}
+
+.gio-hang p {
+    display: none;
+}
+
+.gio-hang:hover p {
+    display: block;
+}
+
+
+/* VIẾT HOA TẤT CẢ CÁC KÝ TỰ TRONG 1 CÂU */
+
+
+/* .upper {
+    text-transform: uppercase;
+}
+ */
+
+
+/* END - CSS cho các thẻ a */
+
+.large {
+    font-size: 3em;
+}
+
+.left-right-btn {
+    text-align: left;
+}
+
+.index-cover-nav-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left-right-btn button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 0 15px;
+}
+
+.img-float-left {
+    float: left;
+}
+
+.img-float-right {
+    float: right;
+}
+
+.index-fall-collection{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.shop-these-collection{
+    margin-top: 70px;
+}
+
+.index-collections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-collections-row-2 {
+    display: flex;
+}
+
+.index-collections-row-2>div {
+    margin: 0 10px 10px 0;
+}
+
+.index-collections>div {
+    margin: 0 10px 10px 0;
+}
+
+.index-collections p {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px;
+}
+
+.index-collections-row-2 p {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px;
+}
+
+@media (max-width: 600px) {
+    .index-collections-row-2 {
+        flex-direction: column;
+    }
+    .index-collections-row-2>div {
+        flex-basis: auto;
+    }
+}
+
+.mystery {
+    /* width: 510px; */
+    height: 250px;
+    flex-grow: 5;
+    background: url(../img/index-pic-3-1.jpg);
+    color: white;
+    justify-content: flex-end;
+}
+
+.darling {
+    /* width: 180px; */
+    height: 250px;
+    flex-grow: 2;
+    background: url(../img/index-pic-3-2.jpg);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.beyond {
+    /* width: 270px; */
+    height: 250px;
+    flex-grow: 3;
+    background: url(../img/index-pic-3-3.jpg);
+    color: black;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.reven {
+    height: 250px;
+    /* width: 180px; */
+    /* flex-grow: 1; */
+    flex-basis: 20%;
+    background: url(../img/index-pic-3-4.jpg);
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.le-feminin {
+    height: 250px;
+    /* width: 270px; */
+    /* flex-grow: 2; */
+    flex-basis: 30%;
+    background: url(../img/index-pic-3-5.jpg);
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.naturalism {
+    height: 250px;
+    /* width: 510px; */
+    /* flex-grow: 7; */
+    flex-basis: 50%;
+    background: url(../img/index-pic-3-6.jpg);
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.collection {
+    text-transform: uppercase;
+    background-size: cover;
+    display: flex;
+}
+
+.collection-text {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.collection-text-1,
+.collection-text-2 {
+    padding-right: 40px;
+    width: 50%;
+}
+
+
+/* CSS cho hastag Instagram */
+
+#insta {
+    text-align: center;
+    color: #9B51E0;
+    text-decoration: underline;
+    margin-top: 0.5em;
+    margin-bottom: 46px;
+}
+
+.insta-img {
+    width: 20%;
+}
+
+.insta-all-img {
+    padding: 50px 0 150px 0;
+}
+
+.link-btn i {
+    vertical-align: middle;
+}
+
+.cookie-popup {
+    width: 390px;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.6em 1.875em 1.8em;
+}
+
+.cookie-info {
+    width: 330px;
+    line-height: 30.4px;
+}
+
+.cookie-btn {
+    align-items: flex-end;
+}
+
+.shop-now:hover {
+    opacity: 0.5;
+}
+
+.new-customer {
+    text-align: center;
+    background: url(../img/index-background-new-customer.jpg) center;
+    background-size: cover;
+    padding: 5em 0;
+}
+
+.new-customer-content {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    margin: auto;
+}
+
+.follow-us {
+    margin-top: 100px;
+    margin-bottom: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.footer-nav li {
+    padding: 5px;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-column>div {
+    padding: 20px;
+}
+
+.button-accept {
+    color: white;
+    border-style: none none solid;
+    border-color: white;
+    background-color: transparent;
+}
+
+.messenger-button {
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/* Tạo gạch dưới cho button Login/Register */
+
+.link-btn {
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.gio-hang i {
+    vertical-align: middle;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.tick {
+    line-height: 1.8;
+}
+
+
+/* STYLE CHO PAGE DETAIL                    */
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* CSS cho thumbnail */
+
+.thumbnail-selected {
+    /* border-style: solid;
+    border-width: 2px; */
+    border: 2px solid;
+}
+
+.active-thumbnail {
+    width: 100%;
+}
+
+.thumbnail {
+    opacity: 0.3;
+    width: 100%;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.detail-product-info {
+    width: 100%;
+}
+
+.link-path a {
+    padding: 10px 10px;
+}
+
+.detail-share {
+    width: 100%;
+}
+
+.detail-select-color {
+    display: flex;
+    align-items: center;
+}
+
+.detail-select-size {
+    display: flex;
+    align-items: center;
+}
+
+.detail-select-quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-thumbnail-product-columm {
+    display: flex;
+}
+
+.detail-column-1 {
+    /* width: 10%; */
+    flex: 10%;
+    padding: 0 10px 0 0;
+}
+
+.detail-column-2 {
+    /* width: 40%; */
+    flex: 40%;
+    padding: 0 35px 0 10px;
+}
+
+.detail-column-3 {
+    /* width: 50%; */
+    flex: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: space-between;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .detail-thumbnail-product-columm {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .detail-column-1,
+    .detail-column-2,
+    .detail-column-3 {
+        flex: 100%;
+    }
+    .detail-column-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .thumbnail {
+        width: 100px;
+    }
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    .related-product {
+        width: 50%;
+    }
+    .index-collections {
+        display: flex;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    .related-product {
+        width: 25%;
+    }
+}
+
+
+/* set cho Element đầu tiên có màu xanh lá */
+
+.reason p:first-child {
+    color: green;
+}
+
+
+/* thẻ <p> cuối cùng trong class reason có màu xám */
+
+.reason p:last-child {
+    color: #828282;
+}
+
+
+/* thêm tick (một hình có sẵn) vào đầu mỗi dòng trong một list */
+
+.tick li::before {
+    content: url(../img/tick.svg);
+    vertical-align: middle;
+}
+
+
+/* CSS ĐỂ 4 CỘT SẢN PHẨM CÙNG NẰM TRÊN 1 HÀNG */
+
+.related-product {
+    float: left;
+    padding: 0 10px;
+}
+
+.related-product img {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* END - CSS ĐỂ 4 CỘT SẢN PHẨM CÙNG NẰM TRÊN 1 HÀNG */
+
+.quantity {
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.quantity button {
+    border: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.add-to-cart {
+    position: relative;
+}
+
+.add-to-cart-btn {
+    display: none;
+    position: absolute;
+    bottom: 1.25em;
+    left: 50%;
+    border-radius: 30px;
+    transform: translate(-50%, 0);
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.product:hover .add-to-cart-btn {
+    display: initial;
+    animation-name: slideup;
+    animation-duration: 0.5s;
+}
+
+.product img {
+    transition: transform 1s;
+}
+
+.product:hover img {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@keyframes slideup {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 1.25em;
+        opacity: 1;
+    }
+}
+
+.sale-product {
+    position: relative;
+}
+
+.sale {
+    position: absolute;
+    text-align: center;
+    background-color: #D50000;
+    opacity: 0.8;
+    top: 15px;
+    right: 15px;
+    border-radius: 15px;
+}
+
+.favorite-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 0;
+}
+
+.share-social {
+    margin: 0 10px;
+}
+
+.detail-product a {
+    margin: 0 15px 30px 0;
+}
+
+.detail-product {
+    text-align: center;
+    margin: 100px 0 30px;
+}
+
+.nav-pills{
+    padding: 100px 25% 30px 50%;
+}
+
+
+/* CSS CHO ABOUT.HTML                   */
+
+.some-number {
+    /* margin: 250px 240px; */
+    float: left;
+    width: 25%;
+    padding: 40px;
+}
+
+
+/* dòng đầu tiên của thẻ <p> trong class some-number cỡ chữ 14px */
+
+.some-number p:first-child {
+    font-size: 0.88em;
+}
+
+
+/* dòng cuối cùng của thẻ <p> trong class some-number cỡ chữ 14px */
+
+.some-number p:last-child {
+    font-size: 0.88em;
+}
+
+.highlight-number {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+::selection {
+    color: white;
+    background-color: navy;
+}
+
+::-moz-selection {
+    color: white;
+    background-color: navy;
+}
+
+.some-number-about-us {
+    background-color: #F2F2F2;
+}
+
+.some-number-about-us-content {
+    padding: 110px 230px;
+    margin: auto;
+}
+
+.about-experience {
+    display: flex;
+}
+
+.experience-column-2 {
+    display: flex;
+    align-items: center;
+}
+
+
+/* CSS CHO PAGE LISTING                 */
+
+.product p:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18.9px;
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-by-category{
+    line-height: 35px; 
+    font-size: 14px;
+    list-style-type: none;
+    padding-inline-start:0px;
+}
+
+.button-filter-tron {
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.selected-button-filter {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.sort {
+    font-size: 16px;
+    width: 210px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+.result-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-filter p {
+    margin: 0;
+}
+
+.select-color{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.filter-color {
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    margin: 0 12px 12px 0;
+}
+
+
+.filter-color:hover {
+    opacity: 0.5;
+}
+
+
+.result-product{
+    margin-top: 35px;
+    z-index: -1;
+}
+
+.listing-column {
+    display: flex;
+}
+
+.menu-doc {
+    width: 25%;
+}
+
+.listing-product {
+    width: 75%;
+}
+
+.page-number {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    padding: 0 10px;
+    margin: 60px 20px 120px 0;
+    width: 40px;
+    height: 40px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    margin: 10px 10px;
+    width: 30.33%;
+}
+
+.flex-container>div img {
+    width: 100%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+/* CSS CHO PAGE ABOUT.HTML */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.vision-mission {
+    width: 50%;
+    float: left;
+}
+
+.vision-mission p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vision-mission p:last-child {
+    font-size: 14px;
+    color: #828282;
+    line-height: 19.6px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.header-about {
+    background-image: url(../img/about-cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.this-is-nordic-title {
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    margin: 350px 1170px 350px 280px;
+}
+
+.reason-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+
+.reason-part i {
+    padding: 80px 0px 50px 0;
+    margin-left: 90px;
+}
+
+.reason-part p {
+    text-align: center;
+}
+
+.conntact-submit-btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+}
